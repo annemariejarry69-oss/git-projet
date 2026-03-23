@@ -8,7 +8,8 @@
   </head>
   <body>
     <header>
-      <ul style="list-style: none;">
+        <nav>
+        <ul style="list-style: none;">
         <li>
           <a href="">accueil</a>
         </li>
@@ -21,32 +22,34 @@
           <a href="">nom du produit</a>
         </li>
       </ul>
-      <div class="titre">AKS</div>
+        </nav>
+
+      <div style="color: white;" class="titre">AKS store</div>
     </header>
     <main>
       <section class="produitprincipal">
         <div class="imageproduit">
           <div id="avant">
             <img
-              src=""
+              src="./image/deface.png"
               alt="vu de l'avant"
             />
           </div>
           <div id="droit">
             <img
-              src=""
+              src="./image/de cote.jpeg"
               alt="profil gauche"
             />
           </div>
           <div id="gauche">
             <img
-              src=""
+              src="./image/vu de gauche et droit.jpeg"
               alt="profil droit"
             />
           </div>
           <div id="arriere">
             <img
-              src=""
+              src="./image/arriere.jpeg"
               alt="vue de l'arriere"
             />
           </div>
@@ -61,27 +64,47 @@
                
                 
                 <form action="">
+                    <div>
+                        <h2 style="text-align: center;">Specifications techniques</h2>
+                        <table style="width: 100%;">
+                            <tr>
+                                <td>Écran</td>
+                                <td>6.1 pouces</td>
+                            </tr>
+                            <tr>
+                                <td>RAM</td>
+                                <td>4 Go</td>
+                            </tr>
+                            <tr>
+                                <td>Stockage</td>
+                                <td>128 Go</td>
+                            </tr>
+                        </table>
+                    </div>
                     <div class="quantite"> 
                         <label style="font-size:large;" for="quantite">Qantité:</label >
-                        <input type="number" name="" id="quantite" min="1" maxlength="2" value="1" style="min-height: 60%;font-size: large; width: 75%;">
+                        <input type="number" name="" id="quantite" min="1" maxlength="2" value="1" style="min-height: 60%;font-size: large; width: 75%; text-align: center;">
                     </div>
                     
-                    <select name="stockage" id="stockage" style="width: 100px;">
+                   <div style="min-width: 50%; height: 20px; ">
+                         <select  name="stockage" id="stockage" style="width: 100px;">
                         <option value="">128 Go</option>
                         <option value="">256 Go</option>
                         <option value="">512 Go</option>
                     </select>
+                   </div>
                     <div class="couleur">
                         <label for="">couleur : </label>
-                        <input type="radio" name="" id="">
+                        <input type="radio" name="color" id="">
                         <div id="black">  </div>
-                        <input type="radio" name="" id=""><div id="white" >  </div >
-                        <input type="radio" name="" id="" ><div id="blue" >  </div >
+                        <input type="radio" name="color" id=""><div id="white" >  </div >
+                        <input type="radio" name="color" id="" ><div id="blue" >  </div >
                     </div>
-                    <button type="button">ajouter au panier</button>
+
+                    <button type="submit">ajouter au panier</button>
                 </form>
-                <div style="display: grid;grid-template-columns: 33% 33% 34%;
-                grid-template-rows: 1fr; " >
+                <div style="display: grid;grid-template-columns: 30% 30% 30%;
+                grid-template-rows: 1fr; justify-content: space-between;align-items: end;" >
                     <button type="button" ><a href="#Description">Description</a></button>
                 <button type="button">  <a href="#Specifications">Specifications</a></button>
                 <button type="button"><a href="#Avis">Avis</a></button>

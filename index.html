@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <ul style="list-style: none;">
+        <li>
+          <a href="">accueil</a>
+        </li>
+        <div class="sep">></div>
+        <li>
+          <a href="">categorie du produit</a>
+        </li>
+        <div class="sep">></div>
+        <li>
+          <a href="">nom du produit</a>
+        </li>
+      </ul>
+      <div class="titre">AKS</div>
+    </header>
+    <main>
+      <section class="produitprincipal">
+        <div class="imageproduit">
+          <div id="avant">
+            <img
+              src=""
+              alt="vu de l'avant"
+            />
+          </div>
+          <div id="droit">
+            <img
+              src=""
+              alt="profil gauche"
+            />
+          </div>
+          <div id="gauche">
+            <img
+              src=""
+              alt="profil droit"
+            />
+          </div>
+          <div id="arriere">
+            <img
+              src=""
+              alt="vue de l'arriere"
+            />
+          </div>
+        </div>
+        <div class="formulaire">
+            <div class="infoproduit">
+                 <h2>nom du produit</h2>
+                <h2 style="color: rgb(224, 11, 11);">prix du produit</h2>
+                <p>Référence: ref du produit </p>
+                <p> disponibilité: <b style="color: rgb(35, 158, 35);">En stock</b></p>
+            </div>
+               
+                
+                <form action="">
+                    <div class="quantite"> 
+                        <label style="font-size:large;" for="quantite">Qantité:</label >
+                        <input type="number" name="" id="quantite" min="1" maxlength="2" value="1" style="min-height: 60%;font-size: large; width: 75%;">
+                    </div>
+                    
+                    <select name="stockage" id="stockage" style="width: 100px;">
+                        <option value="">128 Go</option>
+                        <option value="">256 Go</option>
+                        <option value="">512 Go</option>
+                    </select>
+                    <div class="couleur">
+                        <label for="">couleur : </label>
+                        <input type="radio" name="" id="">
+                        <div id="black">  </div>
+                        <input type="radio" name="" id=""><div id="white" >  </div >
+                        <input type="radio" name="" id="" ><div id="blue" >  </div >
+                    </div>
+                    <button type="button">ajouter au panier</button>
+                </form>
+                <div style="display: grid;grid-template-columns: 33% 33% 34%;
+                grid-template-rows: 1fr; " >
+                    <button type="button" ><a href="#Description">Description</a></button>
+                <button type="button">  <a href="#Specifications">Specifications</a></button>
+                <button type="button"><a href="#Avis">Avis</a></button>
+                </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

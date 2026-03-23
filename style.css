@@ -1,0 +1,106 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0.1px solid black;
+}
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  max-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+section {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 500px;
+}
+img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+}
+form {
+  display: grid;
+}
+.produitprincipal {
+  gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.imageproduit {
+  min-width: 40%;
+  min-height: 100%;
+}
+.formulaire {
+  min-width: 55%;
+  min-height: 100%;
+  border-radius: 20px;
+  display: grid;
+}
+.infoproduit {
+  display: grid;
+  min-height: 40%;
+}
+.couleur {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+}
+.imageproduit {
+  gap: 10px;
+  display: grid;
+  grid-template-areas:
+    " avant avant avant"
+    "droit gauche arriere";
+}
+#avant {
+  grid-area: avant;
+  min-height: 70%;
+}
+#droit {
+  grid-area: droit;
+}
+#gauche {
+  grid-area: gauche;
+}
+#arriere {
+  grid-area: arriere;
+}
+#black,
+#white,
+#blue {
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: black;
+}
+#quantite {
+  border: none;
+}
+div button {
+  max-height: 30px;
+  background-color: blue;
+  border-radius: 10px;
+}
+div button:hover {
+  height: 45px;
+  background-color: white;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}

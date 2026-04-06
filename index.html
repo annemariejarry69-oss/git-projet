@@ -1,116 +1,345 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style ecommmerce/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header>
-        <nav>
-        <ul style="list-style: none;">
-        <li>
-          <a href="">accueil</a>
+    <!-- barre de navigation -->
+    <nav aria-label="breadcrumb " class="manavbar">
+      <h2>navbar</h2>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+        <li class="breadcrumb-item"><a href="#">laptop</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          macbook airmax
         </li>
-        <div class="sep">></div>
-        <li>
-          <a href="">categorie du produit</a>
-        </li>
-        <div class="sep">></div>
-        <li>
-          <a href="">nom du produit</a>
-        </li>
-      </ul>
-        </nav>
+      </ol>
+    </nav>
+    <!-- section de presentation du produit principale  -->
+    <section class="presentation">
+      <div class="produit jcc">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active fondtransparent">
+              <img
+                src="./image/53b9e5ff69228b5e24fe14e5dba06432.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item fondtransparent">
+              <img
+                src="./image/53b9e5ff69228b5e24fe14e5dba06432.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item fondtransparent">
+              <img
+                src="./image/53b9e5ff69228b5e24fe14e5dba06432.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item fondtransparent">
+              <img
+                src="./image/53b9e5ff69228b5e24fe14e5dba06432.png"
+                alt=""
+                class="d-block w-100"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="formulaire fondtransparent">
+        <div class="infoproduit">
+          <h2>Macbook airmax</h2>
+          <h2 style="color: rgb(224, 11, 11)">100000fcfa</h2>
+          <p>Référence: APPLE-MBA15-M3-16-512-SG</p>
+          <p>disponibilité: <b style="color: rgb(35, 158, 35)">En stock</b></p>
+        </div>
 
-      <div style="color: white;" class="titre">AKS store</div>
-    </header>
-    <main>
-      <section class="produitprincipal">
-        <div class="imageproduit">
-          <div id="avant">
-            <img
-              src="./image/deface.png"
-              alt="vu de l'avant"
+        <form action="">
+          <div>
+            <h2 style="text-align: center">Specifications techniques</h2>
+            <table style="width: 100%">
+              <tr>
+                <td>Écran</td>
+                <td>12.3 pouces</td>
+              </tr>
+              <tr>
+                <td>RAM</td>
+                <td>4 Go</td>
+              </tr>
+              <tr>
+                <td>Stockage</td>
+                <td>128 Go</td>
+              </tr>
+              <tr>
+                <td>processeur</td>
+                <td>core i3</td>
+              </tr>
+              <tr>
+                <td>frequence</td>
+                <td>2.8 GHz</td>
+              </tr>
+            </table>
+          </div>
+          <h2 class="title2">formulaire d'achat</h2>
+          <div class="quantite">
+            <label style="font-size: large" for="quantite">Qantité:</label>
+            <input
+              type="number"
+              name=""
+              id="quantite"
+              min="1"
+              maxlength="2"
+              value="1"
             />
           </div>
-          <div id="droit">
-            <img
-              src="./image/de cote.jpeg"
-              alt="profil gauche"
-            />
+
+          <div class="stockage">
+            <select name="stockage" id="stockage" style="width: 100px">
+              <option value="">128 Go</option>
+              <option value="">256 Go</option>
+              <option value="">512 Go</option>
+            </select>
           </div>
-          <div id="gauche">
-            <img
-              src="./image/vu de gauche et droit.jpeg"
-              alt="profil droit"
-            />
+          <div class="couleur">
+            <label for="">couleur : </label>
+            <input type="radio" name="color" id="" />
+            <div id="black"></div>
+            <input type="radio" name="color" id="" />
+            <div id="white"></div>
+            <input type="radio" name="color" id="" />
+            <div id="blue"></div>
           </div>
-          <div id="arriere">
-            <img
-              src="./image/arriere.jpeg"
-              alt="vue de l'arriere"
-            />
+
+          <button type="submit" class="btnclick">ajouter au panier</button>
+        </form>
+        <div
+          style="
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+          "
+        >
+          <button type="button" class="btnclick">
+            <a href="#Description">Description</a>
+          </button>
+          <button type="button" class="btnclick">
+            <a href="#Specifications">Specifications</a>
+          </button>
+          <button type="button" class="btnclick">
+            <a href="#Avis">Avis</a>
+          </button>
+        </div>
+      </div>
+      <div class="avis-clients">
+        <h2 class="title2">avis clients</h2>
+        <div class="avis jcc">
+          <div class="message">
+            <div class="anonyme">
+              <img
+                src="./image/contact-3d-icon-png-download-13684937.png"
+                height="60px"
+                width="60px"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <h4>Amine B</h4>
+              <p>
+                "La puce est d'une rapidité folle. Parfait pour mes projets de
+                montage et de code, le tout sans aucun bruit de ventilateur."
+              </p>
+              <p><span>&#11088;&#11088;&#11088;&#11088;&#11088;</span></p>
+              <p></p>
+            </div>
+          </div>
+          <div class="message">
+            <div class="anonyme">
+              <img
+                src="./image/contact-3d-icon-png-download-13684937.png"
+                height="60px"
+                width="60px"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <h4>Jean-Philipe T.</h4>
+              <p>
+                "L'écran est superbe et l'autonomie tient vraiment toute la
+                journée. Un peu coûteux, mais la qualité est au rendez-vous."
+              </p>
+              <p><span>&#11088;&#11088;&#11088;&#11088;&#11088;</span></p>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="message">
+            <div class="anonyme">
+              <img
+                src="./image/contact-3d-icon-png-download-13684937.png"
+                height="60px"
+                width="60px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h4>Sarah K.</h4>
+              <p>
+                "Très performant, par contre la couleur Minuit garde énormément
+                les traces de doigts. Prévoyez un chiffon !"
+              </p>
+              <p><span>&#11088;&#11088;&#11088;&#11088;</span></p>
+            </div>
+          </div>
+          <div class="message">
+            <div class="anonyme">
+              <img
+                src="./image/contact-3d-icon-png-download-13684937.png"
+                height="60px"
+                width="60px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h4>Lucas M.</h4>
+              <p>
+                "Léger dans le sac et ultra puissant pour la programmation. Le
+                clavier est un régal pour la prise de notes."
+              </p>
+              <p><span>&#11088;&#11088;&#11088;&#11088;&#11088;</span></p>
+            </div>
           </div>
         </div>
-        <div class="formulaire">
-            <div class="infoproduit">
-                 <h2>nom du produit</h2>
-                <h2 style="color: rgb(224, 11, 11);">prix du produit</h2>
-                <p>Référence: ref du produit </p>
-                <p> disponibilité: <b style="color: rgb(35, 158, 35);">En stock</b></p>
-            </div>
-               
-                
-                <form action="">
-                    <div>
-                        <h2 style="text-align: center;">Specifications techniques</h2>
-                        <table style="width: 100%;">
-                            <tr>
-                                <td>Écran</td>
-                                <td>6.1 pouces</td>
-                            </tr>
-                            <tr>
-                                <td>RAM</td>
-                                <td>4 Go</td>
-                            </tr>
-                            <tr>
-                                <td>Stockage</td>
-                                <td>128 Go</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="quantite"> 
-                        <label style="font-size:large;" for="quantite">Qantité:</label >
-                        <input type="number" name="" id="quantite" min="1" maxlength="2" value="1" style="min-height: 60%;font-size: large; width: 75%; text-align: center;">
-                    </div>
-                    
-                   <div style="min-width: 50%; height: 20px; ">
-                         <select  name="stockage" id="stockage" style="width: 100px;">
-                        <option value="">128 Go</option>
-                        <option value="">256 Go</option>
-                        <option value="">512 Go</option>
-                    </select>
-                   </div>
-                    <div class="couleur">
-                        <label for="">couleur : </label>
-                        <input type="radio" name="color" id="">
-                        <div id="black">  </div>
-                        <input type="radio" name="color" id=""><div id="white" >  </div >
-                        <input type="radio" name="color" id="" ><div id="blue" >  </div >
-                    </div>
+      </div>
+    </section>
+    <!-- section de sufestion d'autre produit  -->
+    <section>
+      <h2 class="title2">produit simulaire</h2>
+      <div class="cards jcc">
+        <div class="card" style="width: 18rem">
+          <img
+            src="./image/53b9e5ff69228b5e24fe14e5dba06432.png"
+            class="card-img-top"
+            alt="macbook max"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Macbook max</h5>
+            <p class="card-text">90000fcfa</p>
+            <p class="card-text">&#11088;&#11088;&#11088;</p>
+            <a href="#" class="btn btn-primary btnclick">voir</a>
+          </div>
+        </div>
 
-                    <button type="submit">ajouter au panier</button>
-                </form>
-                <div style="display: grid;grid-template-columns: 30% 30% 30%;
-                grid-template-rows: 1fr; justify-content: space-between;align-items: end;" >
-                    <button type="button" ><a href="#Description">Description</a></button>
-                <button type="button">  <a href="#Specifications">Specifications</a></button>
-                <button type="button"><a href="#Avis">Avis</a></button>
-                </div>
-      </section>
-    </main>
-    <footer></footer>
+        <div id="card" class="card jcc" style="width: 18rem">
+          <img
+            src="./image/mockup toshiba.png"
+            class="card-img-top"
+            alt="mockup toshiba"
+          />
+          <div class="card-body">
+            <h5 class="card-title">mockup toshiba</h5>
+            <p class="card-text">110000fcfa</p>
+            <p class="card-text">&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+            <a href="#" class="btn btn-primary btnclick">voir</a>
+          </div>
+        </div>
+        <div class="card jcc" style="width: 18rem">
+          <img
+            src="./image/notebook ux430.png"
+            class="card-img-top"
+            alt="notebook ux430"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Notebook UX430</h5>
+            <p class="card-text">105500fcfa</p>
+            <p class="card-text">&#11088;&#11088;&#11088;&#11088;</p>
+            <a href="#" class="btn btn-primary btnclick">voir</a>
+          </div>
+        </div>
+        <div>
+          <div class="card jcc" style="width: 18rem">
+            <img
+              src="./image/macbook pro 13inch.png"
+              class="card-img-top"
+              alt="macbook pro 13inch"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Macbook Pro 13inch</h5>
+              <p class="card-text">145500fcfa</p>
+              <p class="card-text">&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+              <a href="#" class="btn btn-primary btnclick">voir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js ecommerce/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav,
+.card,
+.fondtransparent {
+  /* L'effet de flou */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Pour la compatibilité Safari */
+
+  /* Une couleur de fond semi-transparente est INDISPENSABLE */
+  /* Sans elle, on ne verra pas l'effet de flou */
+  background-color: rgba(255, 255, 255, 0.3);
+
+  /* Optionnel : une petite bordure pour accentuer l'effet verre */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  padding: 15px 0;
+}
+select {
+  background: none;
+  border-radius: 5px;
+}
+/* option :hover {
+  backdrop-filter: blur(10px);
+} */
+a {
+  color: black;
+  text-decoration: none;
+}
+nav {
+  height: 60px;
+}
+section {
+  margin: 5%;
+  min-height: 600px;
+}
+body {
+  background-image: url("../image/fondsite2.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* barre de navigation et header  */
+.jcc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.manavbar {
+  /* Positionnement pour qu'elle reste en haut lors du scroll */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  /* justify-content: start; */
+  align-items: baseline;
+  background-color: transparent;
+  opacity: 7px;
+  gap: 20px;
+}
+.carousel,
+.carousel-item {
+  height: 500px;
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+}
+
+.d-block {
+  max-height: 100%;
+  max-width: 60%;
+  margin: auto;
+}
+.card img {
+  margin: 7.5%;
+  height: 174px;
+  width: 232px;
+}
+/* section avis  */
+.title2 {
+  text-align: center;
+}
+.message {
+  background-color: #e0e7ff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  min-height: 70px;
+  padding: 2.5%;
+  width: 25%;
+  height: 300px;
+  gap: 10px;
+}
+.anonyme {
+  border-radius: 50%;
+  background-color: lightgrey;
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.avis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+/* info et formulaire d'achat  */
+.formulaire {
+  margin-bottom: 5%;
+  padding: 5%;
+  border-radius: 0 0 30px 30px;
+}
+.couleur {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+input {
+  margin: 1%;
+  background: none;
+  border: none;
+}
+.formulaire div button,
+form button {
+  min-width: 150px;
+  height: 30px;
+  background-color: rgb(53, 118, 134);
+  border-radius: 10px;
+}
+form button:hover,
+.formulaire div button:hover {
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+button {
+  border: none;
+  margin: 1%;
+}
+#black {
+  background-color: rgb(20, 16, 16);
+}
+#blue {
+  background-color: rgb(50, 50, 165);
+}
+#white {
+  background-color: rgb(236, 222, 222);
+}
+#black,
+#blue,
+#white {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
